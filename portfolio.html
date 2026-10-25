@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>أحلام الشهراني | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--soft:#f2f7ff;--ink:#14223b;--mute:#53627c;--navy:#0b2a5b;--blue:#1d5fd1;--sky:#8db8ff;--line:#d6e2f5;--card:#fff;--on:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1427;--soft:#0f1d38;--ink:#e9f0ff;--mute:#a9b7d3;--navy:#cfe0ff;--blue:#6ea3ff;--sky:#2a4f96;--line:#23375f;--card:#101f3d;--on:#0a1427}}
+:root[data-theme="dark"]{--bg:#0a1427;--soft:#0f1d38;--ink:#e9f0ff;--mute:#a9b7d3;--navy:#cfe0ff;--blue:#6ea3ff;--sky:#2a4f96;--line:#23375f;--card:#101f3d;--on:#0a1427}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Readex Pro",system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;line-height:1.8;font-weight:300}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:14px;padding-bottom:14px;gap:12px}
+header b{font-weight:600;color:var(--navy)}
+nav{display:flex;gap:18px;align-items:center;font-size:.92rem}
+nav a{color:var(--mute);text-decoration:none}
+nav a:hover{color:var(--blue)}
+button{font:inherit;font-size:.9rem;cursor:pointer;border:1px solid var(--blue);background:transparent;color:var(--blue);border-radius:8px;padding:2px 14px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.hero{background:var(--soft);border-bottom:1px solid var(--line)}
+.hero .wrap{padding-top:52px;padding-bottom:52px;display:grid;gap:36px;grid-template-columns:1.25fr 1fr;align-items:center}
+@media(max-width:760px){.hero .wrap{grid-template-columns:1fr}nav a{display:none}}
+.hero h1{font-size:clamp(1.9rem,5.4vw,3rem);line-height:1.4;font-weight:600;color:var(--navy);margin:0 0 14px}
+.hero p{color:var(--mute);margin:0 0 18px;max-width:34em}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px;padding:0;list-style:none}
+.chips li{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:0 14px;font-size:.88rem;color:var(--navy)}
+.cta{display:inline-block;background:var(--blue);color:var(--on);text-decoration:none;border-radius:8px;padding:8px 22px;font-weight:600}
+.stats{display:grid;gap:12px}
+.stat{background:var(--card);border:1px solid var(--line);border-inline-start:5px solid var(--blue);border-radius:10px;padding:12px 18px}
+.stat b{display:block;font-size:1.9rem;line-height:1.3;color:var(--blue);font-weight:600}
+.stat span{color:var(--mute);font-size:.92rem}
+section{padding:52px 0 8px}
+h2{font-size:1.6rem;font-weight:600;color:var(--navy);margin:0 0 6px}
+.lead{color:var(--mute);margin:0 0 26px}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.card svg{display:block;width:100%;height:auto;background:var(--soft)}
+.card .in{padding:18px 20px 22px}
+.tag{display:inline-block;background:var(--soft);color:var(--blue);border:1px solid var(--line);border-radius:6px;padding:0 10px;font-size:.82rem}
+.card h3{margin:8px 0 2px;font-size:1.1rem;font-weight:600;color:var(--navy);line-height:1.6}
+dl{margin:0}dt{font-weight:600;font-size:.88rem;margin-top:10px;color:var(--ink)}dd{margin:0;color:var(--mute);font-size:.95rem}
+.two{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))}
+.box{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:22px}
+.box h3{margin:0 0 8px;font-size:1.1rem;color:var(--navy);font-weight:600}
+.box ul{margin:0;padding-inline-start:20px;color:var(--mute)}
+.box li{margin:6px 0}
+.contact{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))}
+.contact a{display:block;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 18px;text-decoration:none;color:var(--ink)}
+.contact a:hover{border-color:var(--blue)}
+.contact small{display:block;color:var(--blue);font-weight:600}
+.contact span{direction:ltr;unicode-bidi:plaintext;display:block;overflow-wrap:anywhere;font-size:.92rem;color:var(--mute)}
+footer{margin-top:52px;border-top:1px solid var(--line);padding:20px 0 36px;color:var(--mute);font-size:.88rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><b id="brand"></b><nav><a href="#projects" id="n1"></a><a href="#experience" id="n2"></a><a href="#contact" id="n3"></a><button id="lang" type="button" aria-label="Language"></button></nav></div></header>
+<main>
+<div class="hero"><div class="wrap">
+<div><h1 id="h1"></h1><p id="sub"></p><ul class="chips" id="chips"></ul><a class="cta" href="#contact" id="cta"></a></div>
+<div class="stats" id="stats"></div>
+</div></div>
+<div class="wrap">
+<section id="projects"><h2 id="ph"></h2><p class="lead" id="pl"></p><div class="grid" id="grid"></div></section>
+<section id="experience"><h2 id="eh"></h2><p class="lead" id="el"></p><div class="two" id="exp"></div></section>
+<section id="contact"><h2 id="ch"></h2><p class="lead" id="cl"></p><div class="contact" id="ct"></div></section>
+</div>
+</main>
+<footer><div class="wrap" id="ft"></div></footer>
+<script>
+const art=[
+'<circle cx="100" cy="100" r="9"/><circle cx="200" cy="55" r="9"/><circle cx="200" cy="145" r="9"/><circle cx="300" cy="100" r="14"/><path d="M109 97L191 58M109 103L191 142M209 57L288 94M209 143L288 106" stroke="var(--blue)" stroke-width="3" fill="none"/>',
+'<rect x="90" y="110" width="34" height="50" rx="4"/><rect x="146" y="85" width="34" height="75" rx="4"/><rect x="202" y="60" width="34" height="100" rx="4"/><path d="M80 100L165 72L225 45L310 30" stroke="var(--navy)" stroke-width="4" fill="none"/><circle cx="310" cy="30" r="7"/>',
+'<rect x="70" y="45" width="170" height="52" rx="14"/><rect x="160" y="112" width="170" height="52" rx="14" fill="var(--sky)"/><path d="M92 71h90M182 138h120" stroke="var(--bg)" stroke-width="6" stroke-linecap="round"/>',
+'<rect x="75" y="60" width="90" height="110" rx="10" transform="rotate(-10 120 115)"/><rect x="155" y="50" width="90" height="110" rx="10" fill="var(--sky)"/><rect x="235" y="60" width="90" height="110" rx="10" transform="rotate(10 280 115)"/><path d="M200 85v40M182 125h36" stroke="var(--bg)" stroke-width="6" stroke-linecap="round"/>',
+'<rect x="70" y="35" width="260" height="130" rx="10" fill="var(--bg)" stroke="var(--blue)" stroke-width="4"/><path d="M100 70h140M100 100h190M100 130h100" stroke="var(--sky)" stroke-width="8" stroke-linecap="round"/><rect x="215" y="120" width="5" height="20"/>'];
+const T={
+ar:{brand:"أحلام الشهراني",btn:"English",nav:["المشاريع","الخبرة","تواصل"],
+h1:"مصممة برامج تعلّم واستراتيجية تعلّم بالذكاء الاصطناعي",
+sub:"أصمم تجارب تعلم واضحة وقابلة للقياس في الذكاء الاصطناعي والحوسبة، بخبرة عملية في التدريس الجامعي وتطوير المناهج.",
+chips:["خبرة في التدريس الجامعي","تطوير المناهج","التعلم عن بُعد والمدمج","الذكاء الاصطناعي في التعليم"],cta:"تواصل معي",
+stats:[["200+","طالب سنوياً في مقررات عن بُعد ومدمجة"],["50+","مادة تعليمية تفاعلية صممتها"],["92%","متوسط إكمال المقرر"]],
+ph:"مشاريع مختارة",pl:"مشاريع نموذجية (Concept Projects) صممتها لتجارب تعلم في الذكاء الاصطناعي.",
+lab:["المتعلمون","تجربة التعلم","المخرجات"],
+eh:"خبرة في التدريس الجامعي وتطوير المناهج",el:"أكثر من ثلاث سنوات من التدريس الجامعي وتطوير المناهج.",
+exp:[["التدريس وتصميم المحتوى",["خبرة في التدريس في جامعات مرموقة مثل جامعة الملك سعود وجامعة الأمير مساعد بن عبدالرحمن وكلية الغد، في بيئات حضورية ومدمجة وعن بُعد.","جامعة الأمير مساعد بن عبدالرحمن (الجامعة السعودية الإلكترونية سابقاً): تدريس مقررات عن بُعد ومدمجة عبر Blackboard، وتصميم أكثر من 50 مادة تفاعلية (اختبارات ووحدات وسائط متعددة) بمتوسط إكمال 92%.","كلية الغد للعلوم الطبية التطبيقية: تدريس الحاسب ومهارات التواصل لأكثر من 90 طالباً في السنة التحضيرية كل فصل، مع رضا طلابي فوق 90%.","تدريب الطلاب على الكتابة الأكاديمية والعرض، وتحسّن متوسط درجات العروض بنسبة 18%."]],
+["تطوير المناهج والجودة",["إعداد الاختبارات والمشاريع والتقييمات العملية وفق مخرجات التعلم في NCAAA.","رئيسة لجنة الضبط ومسؤولة الالتزام بالمعيار السادس في الاعتماد الأكاديمي.","عضو في لجان الاعتماد، وتطوير أعضاء هيئة التدريس، ووحدة الجودة والتطوير، والإرشاد الأكاديمي."]],
+["التعليم والشهادات",["ماجستير نظم المعلومات (بتقدير ممتاز مع مرتبة الشرف) من جامعة الملك خالد.","دبلوم عالٍ في علوم الحاسب بمعدل 4.88/5 ضمن أفضل 5 في الدفعة، وبكالوريوس علوم الحاسب.","شهادات: تعلم الآلة (وزارة الاتصالات)، ITIL 4، التصميم الرسومي المتحرك، وأمن المعلومات."]]],
+ch:"تواصل معي",cl:"يسعدني التواصل بخصوص التعاون أو الفرص الأكاديمية والتدريبية.",
+ct:["البريد الإلكتروني","الجوال","LinkedIn","GitHub"],
+p:[
+{t:"مقدمة في الذكاء الاصطناعي لغير المتخصصين",g:"مقرر نموذجي",a:"طلاب وموظفون من خارج مجال الحاسب يريدون فهم الذكاء الاصطناعي دون برمجة.",b:"وحدات قصيرة، كل وحدة تبدأ بمفهوم واحد ثم تطبيق عملي بأدوات بلا كود مثل Teachable Machine، وتنتهي باختبار قصير.",c:"أهداف التعلم، خريطة المحتوى، الأنشطة، اختبارات الوحدات"},
+{t:"معمل تعلم الآلة العملي",g:"مختبرات عملية",a:"طلاب حاسب يعرفون الأساسيات ويحتاجون ممارسة حقيقية.",b:"مسار يبدأ ببناء نموذج بلا كود، ثم ينتقل إلى دفاتر Python موجّهة خطوة بخطوة مع تلميحات تدريجية.",c:"خمسة مختبرات، أوراق عمل، حلول نموذجية"},
+{t:"ابنِ روبوت محادثة عربي",g:"مشروع على مراحل",a:"طلاب يريدون تطبيق معالجة اللغة الطبيعية على مشكلة حقيقية بلغتهم.",b:"يبني الطالب الروبوت على مراحل: جمع البيانات، تصنيف النوايا، الاختبار، ثم التحسين بعد ملاحظات الزملاء.",c:"دليل المشروع، Rubric التقييم، نموذج مراجعة الأقران"},
+{t:"لعبة التحيز وأخلاقيات الذكاء الاصطناعي",g:"تعلّم باللعب",a:"طلاب ومعلمون يحتاجون نقاشاً عملياً حول أخلاقيات الذكاء الاصطناعي.",b:"بطاقات سيناريوهات واقعية يحللها الفريق، ثم يتخذ قراراً ويناقش أثره على الناس.",c:"لعبة قابلة للطباعة، دليل المدرّب، أسئلة النقاش"},
+{t:"ورشة هندسة الأوامر (Prompt Engineering)",g:"ورشة تدريبية",a:"أعضاء هيئة التدريس والطلاب الذين يستخدمون أدوات الذكاء الاصطناعي دون منهجية.",b:"ورشة من ثلاث ساعات بتمارين قبل وبعد، لقياس تحسّن جودة الأوامر والنتائج.",c:"حقيبة المدرّب، شرائح، تمارين، استبيان قياس الأثر"}],
+ft:"© أحلام الشهراني. السعودية"},
+en:{brand:"Ahlam Alshahrani",btn:"العربية",nav:["Projects","Experience","Contact"],
+h1:"Learning Program Designer and AI Learning Strategist",
+sub:"I design clear, measurable learning experiences in AI and computing, backed by hands-on university teaching and curriculum development.",
+chips:["University teaching","Curriculum development","Online and blended learning","AI in education"],cta:"Get in touch",
+stats:[["200+","students a year in online and blended courses"],["50+","interactive learning materials designed"],["92%","average course completion rate"]],
+ph:"Selected projects",pl:"Concept projects I designed for learning experiences in artificial intelligence.",
+lab:["Learners","Learning experience","Deliverables"],
+eh:"University teaching and curriculum development",el:"More than three years of university teaching and curriculum development.",
+exp:[["Teaching and content design",["Teaching experience at leading universities such as King Saud University, Prince Mosaed bin Abdulrahman University and Alghad College, in face-to-face, blended and online settings.","Prince Mosaed bin Abdulrahman University (formerly Saudi Electronic University): taught online and blended courses on Blackboard and designed 50+ interactive materials (quizzes, multimedia modules) with a 92% average completion rate.","Alghad College for Applied Medical Sciences: taught computer science and communication skills to 90+ preparatory-year students each semester, with satisfaction above 90%.","Coached students in academic writing and presenting, raising average presentation scores by 18%."]],
+["Curriculum and quality",["Developed exams, projects and practical assessments aligned with NCAAA learning outcomes.","Head of the Control Committee, leading Standard 6 compliance for institutional accreditation.","Member of the accreditation, faculty development, quality and development, and academic advising committees."]],
+["Education and certifications",["M.Sc. in Information Systems (Class Honor), King Khalid University.","Higher Diploma in Computer Science (GPA 4.88/5, top 5 in class) and B.Sc. in Computer Science.","Certified in Machine Learning (MCIT), ITIL 4, Motion Graphic Design and cybersecurity awareness."]]],
+ch:"Contact",cl:"I’d be glad to hear about collaborations, academic roles and training opportunities.",
+ct:["Email","Phone","LinkedIn","GitHub"],
+p:[
+{t:"Introduction to AI for non-specialists",g:"Sample course",a:"Students and staff outside computing who want to understand AI without coding.",b:"Short units: each starts with one concept, moves to a hands-on activity with no-code tools such as Teachable Machine, and ends with a quick quiz.",c:"Learning outcomes, content map, activities, unit quizzes"},
+{t:"Hands-on machine learning lab",g:"Practical labs",a:"Computing students who know the basics and need real practice.",b:"A path from building a model with no code to guided Python notebooks, with graduated hints at each step.",c:"Five labs, worksheets, model solutions"},
+{t:"Build an Arabic chatbot",g:"Staged project",a:"Students who want to apply NLP to a real problem in their own language.",b:"Learners build the bot in stages: collect data, classify intents, test, then improve it after peer feedback.",c:"Project guide, assessment rubric, peer-review form"},
+{t:"A game on AI bias and ethics",g:"Learning through play",a:"Students and teachers who need a practical discussion of AI ethics.",b:"Realistic scenario cards that teams analyze, decide on, and then discuss for their impact on people.",c:"Printable game, facilitator guide, discussion questions"},
+{t:"Prompt engineering workshop",g:"Training workshop",a:"Faculty and students who use AI tools without a method.",b:"A three-hour workshop with before-and-after exercises that measure how much prompts and results improve.",c:"Trainer kit, slides, exercises, impact survey"}],
+ft:"© Ahlam Alshahrani. Saudi Arabia"}};
+const L=[["mailto:aha.alshahrani@gmail.com","aha.alshahrani@gmail.com"],["tel:+966559018624","+966 559 018 624"],["https://www.linkedin.com/in/ahlam-al-shahrani-4790871a3","linkedin.com/in/ahlam-al-shahrani-4790871a3"],["https://github.com/Ahlam-Aalshahrani","github.com/Ahlam-Aalshahrani"]];
+const $=i=>document.getElementById(i);
+const e=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;");
+function render(l){
+const d=T[l];document.documentElement.lang=l;document.documentElement.dir=l=="ar"?"rtl":"ltr";
+document.title=d.brand+" | Portfolio";
+$("brand").textContent=d.brand;$("lang").textContent=d.btn;
+["n1","n2","n3"].forEach((k,i)=>$(k).textContent=d.nav[i]);
+$("h1").textContent=d.h1;$("sub").textContent=d.sub;$("cta").textContent=d.cta;
+$("chips").innerHTML=d.chips.map(x=>"<li>"+e(x)+"</li>").join("");
+$("stats").innerHTML=d.stats.map(s=>"<div class=stat><b>"+s[0]+"</b><span>"+e(s[1])+"</span></div>").join("");
+$("ph").textContent=d.ph;$("pl").textContent=d.pl;$("eh").textContent=d.eh;$("el").textContent=d.el;$("ch").textContent=d.ch;$("cl").textContent=d.cl;
+$("grid").innerHTML=d.p.map((p,i)=>"<article class=card><svg viewBox='0 0 400 200' fill='var(--blue)' role='img' aria-label='"+e(p.t)+"'>"+art[i]+"</svg><div class=in><span class=tag>"+e(p.g)+"</span><h3>"+e(p.t)+"</h3><dl><dt>"+d.lab[0]+"</dt><dd>"+e(p.a)+"</dd><dt>"+d.lab[1]+"</dt><dd>"+e(p.b)+"</dd><dt>"+d.lab[2]+"</dt><dd>"+e(p.c)+"</dd></dl></div></article>").join("");
+$("exp").innerHTML=d.exp.map(x=>"<div class=box><h3>"+e(x[0])+"</h3><ul>"+x[1].map(y=>"<li>"+e(y)+"</li>").join("")+"</ul></div>").join("");
+$("ct").innerHTML=L.map((x,i)=>"<a href='"+x[0]+"' target=_blank rel=noopener><small>"+d.ct[i]+"</small><span>"+x[1]+"</span></a>").join("");
+$("ft").textContent=d.ft;
+}
+let cur="ar";render(cur);
+$("lang").onclick=()=>{cur=cur=="ar"?"en":"ar";render(cur)};
+</script>
+</body>
+</html>
